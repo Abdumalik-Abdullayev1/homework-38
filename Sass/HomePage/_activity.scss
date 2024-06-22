@@ -1,0 +1,62 @@
+.activity{
+    &_cards{
+        width: 100%;
+        margin-top: 30px;
+        display: grid;
+        gap: 15px;
+        margin-bottom: 100px;
+        &_card{
+            width: 100%;
+            background-color: rgba(245, 245, 245, 1);
+            border-radius: 10px;
+            padding: 20px;
+            display: grid;
+            gap: 25px;
+            &_info{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            &_desc{
+                font-size: 14px;
+            }
+            &_btn{
+                background-color: transparent;
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 786px) {
+    .activity{
+        &_item{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_title{
+                width: 50%;
+                font-size: 35px;
+            }
+        }
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_card{
+                &_desc{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .activity{
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_card{
+                &_desc{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.attract{
+    &_cards{
+        width: 100%;
+        margin: 20px 0;
+        border: 1.5px solid rgba(204, 204, 204, 1);
+        margin-bottom: 40px;
+        &_card{
+            padding: 20px;
+        }
+        &_info{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &_btn{
+                padding: 10px 0;
+                background-color: transparent;
+                border: 2px solid rgba(204, 204, 204, 1);
+                border-radius: 50px;
+
+            }
+        }
+    }
+}
+@media (min-width: 786px) {
+    .attract{
+        &_item_title{
+            width: 50%;
+            font-size: 35px;
+        }
+        &_cards{
+            margin-bottom: 100px;
+            &_card{
+                display: grid;
+                grid-template-columns: auto auto;
+                align-items: center;
+                gap: 30px;
+            }
+            &_info{
+                &_btn{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .attract{
+        display: grid;
+        grid-template-columns: 30% auto;
+    }    
+}

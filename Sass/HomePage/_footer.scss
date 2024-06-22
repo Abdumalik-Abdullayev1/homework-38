@@ -1,0 +1,19 @@
+.footer{
+    display: grid;
+    gap: 15px;
+    &_lists{
+        display: grid;
+        gap: 5px;
+    }
+    &_sytes{
+        width: 100%;
+        display: grid;
+        gap: 10px;
+    }
+}
+@media (min-width: 786px) {
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}

@@ -1,0 +1,85 @@
+.goal{
+    &_title{
+        margin: 50px 0;
+        font-size: 35px;
+    }
+    &_card{
+        width: 100%;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 10px;
+        &_img{
+            width: 100%;
+            padding: 50px;
+        }
+    }
+    &_desc{
+        margin-bottom: 100px;
+    }
+    &_info{
+        margin-bottom: 10px;
+        display: grid;
+        gap: 15px;
+        padding: 15px 0;
+        &_btn{
+            padding: 5px 0;
+            border-radius: 50px;
+            border: 1.5px solid rgba(204, 204, 204, 1);
+            background-color: transparent;
+        }
+    }
+}
+@media (min-width: 786px) {
+    .goal{
+        display: grid;
+        grid-template-columns: 30% auto;
+        &_title{
+            width: 60%;
+        }
+        &_card{
+            display: flex;
+        }
+        &_desc{
+            display: grid;
+            grid-template-columns: 60% auto;
+            gap: 15px;
+        }
+        &_info{
+            &_desc{
+                margin: 5px 0;
+                font-size: 14px;
+            }
+            &_btn{
+                padding: 3px 0;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .goal{
+        &_info{
+            padding: 5px 0;
+        }
+    }
+}
+@media (min-width:1200px) {
+    .goal{
+        &_title{
+            font-size: 50px;
+        }
+        &_desc{
+            display: grid;
+            grid-template-columns: 40% auto;
+            gap: 20px;
+        }
+        &_info{
+            display: grid;
+            grid-template-columns: auto 20%;
+            align-items: center;
+            padding: 15px 0;
+            gap: 50px;
+            &_desc{
+                font-size: 16px;
+            }
+        }
+    }
+}

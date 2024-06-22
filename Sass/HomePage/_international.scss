@@ -1,0 +1,108 @@
+.international{
+    &_title{
+        margin: 20px 0;
+    }
+    &_left{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        object-position: right;
+        background-repeat: no-repeat;
+        position: relative;
+        background-image: url("/Images/HomePage_pic/inernational_img.svg");
+        &_desc{
+            width: 50%;
+            top: 30px;
+            right: 10%;
+            position: absolute;
+            font-size: 14px;
+            padding: 20px;
+            color: #fff;
+        }
+    }
+    &_cards{
+        &_card{
+            width: 100%;
+            border: 1.5px solid rgba(204, 204, 204, 1);
+            border-radius: 10px;
+            margin: 20px 0;
+            display: grid;
+            gap: 60px;
+            padding: 15px;
+            &_btn{
+                width: 50%;
+                padding: 8px 20px;
+                border-radius: 50px;
+                color: rgba(24, 74, 251, 1);
+            }
+        }
+    }
+}
+@media (min-width: 786px) {
+    .international{
+        &_item{
+            display: grid;
+            grid-template-columns: 30% auto;
+        }
+        &_title{
+            width: 100%;
+            font-size: 28px;
+        }
+        &_left_desc{
+            color: rgba(24, 74, 251, 1);
+        }
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .international{
+        &_left_desc{
+            width: 28%;
+            right: 5%;
+        }
+        &_title{
+            width: 70%;
+            font-size: 35px;
+        }
+        &_desc{
+            display: grid;
+            grid-template-columns: 70% 70%;
+            gap: 10px;
+        }
+        &_cards{
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            &_card{
+                height: 170px;
+            }
+            &_card_btn{
+                width: 60%;
+                padding: 1px;
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .international{
+        &_desc{
+            display: grid;
+            grid-template-columns: 70% 70%;
+        }
+        &_cards{
+            width: 40%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            
+            &_card_btn{
+                width: 40%;
+            }
+        }
+    }
+}
