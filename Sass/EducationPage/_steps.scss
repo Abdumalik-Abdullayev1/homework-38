@@ -1,0 +1,51 @@
+.steps{
+    &_item_title{
+        margin: 15px 0 80px;
+    }
+    &_cards{
+        width: 100%;
+        display: grid;
+        gap: 15px;
+        &_card{
+            width: 100%;
+            display: grid;
+            gap: 20px;
+            border-bottom: 1.5px solid;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (min-width: 786px) {
+    .steps{
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: right;
+        &_item_title{
+            font-size: 35px;
+        }
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+            &_card{
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .steps{
+        &_item_title{
+            font-size: 45px;
+        }
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 25px;
+            &_card{
+                margin-bottom: 100px;
+            }
+        }
+    }
+}

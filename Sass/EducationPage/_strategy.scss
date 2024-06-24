@@ -1,0 +1,50 @@
+.strategy{
+    &_title{
+        margin: 30px 0;
+    }
+    &_cards{
+        display: grid;
+        gap: 10px;
+        &_card{
+            border: 1.5px solid;
+            border-radius: 8px;
+            padding: 15px;
+            &_title{
+                display: grid;
+                gap: 10px;
+            }
+            &_btn{
+                width: 35%;
+                background-color: transparent;
+                padding: 5px 0;
+                border: 1.5px solid rgba(24, 74, 251, 1);
+                color: rgba(24, 74, 251, 1);
+                border-radius: 50px;
+            }
+        }
+    }
+}
+@media (min-width: 786px) {
+    .strategy{
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: right;
+        &_cards{
+            &_card{
+                display: grid;
+                gap: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .strategy{
+        &_cards_card{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_desc{
+                width: 60%;
+            }
+        }
+    }
+}

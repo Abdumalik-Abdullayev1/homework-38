@@ -1,0 +1,115 @@
+.goal_hero{
+    &_title{
+        margin: 15px 0;
+        margin-top: 80px;
+    }
+    &_card{
+        width: 100%;
+        &_img{
+            width: 100%;
+        }
+        &_info{
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+            &_desc{
+                padding: 10px;
+                margin: 50px 0;
+            }
+            &_btn{
+                width: 30%;
+                padding: 5px 0;
+                border: 1.5px solid rgba(204, 204, 204, 1);
+                border-radius: 50px;
+                background-color: transparent;
+                color: rgba(24,74,251,1);
+            }
+        }
+    }
+    &_info{
+        &_cards{
+            display: grid;
+            gap: 15px;
+            &_card{
+                display: grid;
+                grid-template-columns: 75% auto;
+                gap: 30px;
+                align-items: center;
+                border-bottom: 1.5px solid rgba(204, 204, 204, 1);
+                padding-bottom: 15px;
+            }
+            &_card_img{
+                width: 100%;
+            }
+        }
+    }
+}
+.step_goal{
+    &_title{
+        margin: 15px 0;
+    }
+    &_cards{
+        margin: 20px 0 80px;
+        &_card{
+            width: 100%;
+            &:nth-child(2),&:nth-child(3),&:nth-child(4){
+                display: none;
+            }
+            &_img{
+                width: 100%;
+                background-color: rgba(245, 245, 245, 1);
+                border-radius: 10px;
+                padding: 15px;
+            }
+            &_desc{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (min-width:786px) {
+    .goal_hero{
+        display: grid;
+        grid-template-columns: 70%;
+        justify-content: right;
+        &_card_info{
+            display: grid;
+            grid-template-columns: 75% 70%;
+            align-items: center;
+        }
+        &_info{
+            &_cards_card_desc{
+                font-size: 16px;
+            }
+        }
+    }
+    .step_goal{
+        &_cards{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+            &_card{
+                &:nth-child(2),&:nth-child(3),&:nth-child(4){
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 1200px) {
+    .goal_hero{
+        &_title{
+            width: 50%;
+            font-size: 40px;
+        }
+        &_info{
+            &_cards_card_desc{
+                font-size: 20px;
+            }
+            &_cards_card_img{
+                width: 80%;
+            }
+        }
+    }
+}

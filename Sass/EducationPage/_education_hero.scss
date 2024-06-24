@@ -1,0 +1,62 @@
+.education_hero{
+    &_title{
+        width: 100%;
+        background-color: rgba(245, 245, 245, 1);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 80px;
+        &_item{
+            font-size: 28px;
+            padding-bottom: 20px;
+        }
+        &_list{
+            display: grid;
+            gap: 10px;
+            &_item{
+                list-style: inside;
+                &::marker{
+                    color: rgba(24, 74, 251, 1);
+                }
+            }
+            &_link{
+                font-size: 14px;
+            }
+        }
+        &_img{
+            width: 100%;
+            height: 60vh;
+            margin: 30px 0;
+        }
+        &_btn{
+            width: 40%;
+            background-color: rgba(24, 74, 251, 1);
+            border-radius: 50px;
+            padding: 5px 0;
+            color: #fff;
+        }
+    }
+}
+@media (min-width: 786px) {
+    .education_hero{
+        &_title{
+            display: grid;
+            grid-template-columns: auto auto;
+            &_item{
+                width: 50%;
+                font-size: 38px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .education_hero{
+        &_title{
+            padding: 50px;
+            &_item{
+                width: 50%;
+                font-size: 58px;
+
+            }
+        }
+    }
+}

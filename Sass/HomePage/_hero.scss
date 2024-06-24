@@ -1,5 +1,6 @@
 .hero{
     &_title{
+        margin-top: 80px;
         width: 100%;
         display: grid;
         gap: 15px;
@@ -20,7 +21,7 @@
 @media (min-width: 786px) {
     .hero{
         &_title{
-            margin-top: 50px;
+            margin-top: 80px;
             display: flex;
             &_desc{
                 width: 50%;
@@ -31,7 +32,7 @@
 @media (min-width: 992px) {
     .hero{
         &_title{
-            margin-top: 50px;
+            margin-top: 80px;
             display: flex;
             align-items: center;
             gap: 150px;
